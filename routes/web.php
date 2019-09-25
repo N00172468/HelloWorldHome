@@ -3,7 +3,7 @@
 # @Date:   2019-09-25T11:37:53+01:00
 # @Email:  !!!!!---CTRL + ALT + C = Colour Picker---!!!!!
 # @Last modified by:   John Carlo M. Ramos
-# @Last modified time: 2019-09-25T12:05:40+01:00
+# @Last modified time: 2019-09-25T12:31:53+01:00
 
 
 
@@ -33,3 +33,11 @@ Route::get('helloworldhome', function () {
 Route::get('welcomeramos', function () {
     return view('welcomeramos');
 });
+
+//Activity (Refer to resources/views/):
+Route::get('helloworldhome', function () {
+    return view('hellohome');
+});
+
+//Activity (Refer to app/Http/Controllers/):
+Route::get('/hellohome', 'HelloController@hellohome');
